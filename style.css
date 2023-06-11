@@ -11,15 +11,19 @@ body{
 
 li { 
     list-style: none; 
-    
+
 } 
 div{ 
     display: block;
+} 
+
+p{ 
+    color: black;
 }
 
 #navbar { 
     display: flex;
-    
+
     align-items: center;  
     height: 60px; 
     width: 100%;    
@@ -38,7 +42,7 @@ div{
 }  
 
 .menu a{  
-    
+
     text-decoration: none; 
     padding: 15px; 
     color: white;
@@ -54,7 +58,7 @@ div{
 } 
 
 #photoback {  
-    
+
     background-image: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%),  url("https://cdn.pixabay.com/photo/2022/04/29/17/48/lofoten-7164179_1280.jpg");  
     image-rendering: -webkit-optimize-contrast; 
@@ -77,7 +81,7 @@ div{
     color: white;
     font-size: 4.5rem; 
     text-shadow: 4px 2px 6px rgba(0,0,0,0.16);
-    
+
 }  
 
 #subtoptext{ 
@@ -89,15 +93,53 @@ div{
 
 #nameheads{    
     margin-top: 200px; 
-     
+
 }
 
 #about_me{ 
     display: flex;
-    height: 400px; 
+    
     width: 100vw;  
     max-width: 100%; 
-    background-color: rgb(255, 253, 253);  
+    background-color: rgb(255, 253, 253);   
+    flex-direction: column; 
+    align-content: center;  
+}  
+
+#h2aboutme{ 
+    color: black; 
+    font-size: 2em;  
+    margin-top: 50px; 
+    text-align: center;  
+
 } 
+
+.imageblock{
+    display: flex; 
+    justify-content: center; 
+    margin-top: 30px;
+}
+
+#profilPic{ 
+    height: 150px; 
+    width: 150px;  
+    text-align: center;  
+    border-radius: 50%;
+} 
+
+#aboutMeBottom{  
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; 
+    
+    
+}   
+
+#ccsfuc{ 
+    text-align: center; 
+    background-color: rgb(248, 246, 246);  
+    padding: 20px; 
+    max-width: 500px;
+}
 
 
