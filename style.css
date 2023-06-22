@@ -72,19 +72,21 @@ h3{
     background-position-y: top; 
     background-size: cover;
     width: 100vw; 
-    height: 100vh;   
+    height: 750px;   
     max-width: 100%;
     text-align: center;     
     display: flex; 
-    justify-content: center;
     background-attachment: fixed;   
-    background-color: black; 
+    background-color: black;  
+    align-items: auto; 
+    justify-content: center;
 }  
 
 .top_text{  
     color: white;
     font-size: 4.5rem; 
-    text-shadow: 4px 2px 6px rgba(0,0,0,0.16);
+    text-shadow: 4px 2px 6px rgba(0,0,0,0.16); 
+    margin-top: 0px;
 
 }  
 
@@ -92,22 +94,27 @@ h3{
     color: white; 
     text-shadow: 4px 2px 6px rgba(0,0,0,0.16); 
     font-size: 1rem; 
-    margin-top: 30px;
-}
+    margin-top: 10px;
+   
+} 
+#navarrow i{ 
+    margin-top: 320px;
+    font-size: 28px; 
+    text-shadow: 4px 2px 6px rgba(0,0,0,0.16); 
+} 
 
 #nameheads{    
-    margin-top: 200px; 
-
+   margin-top: 160px;
 }
 
 #about_me{ 
     display: flex;
-    margin-top: 50px;
     width: 100vw;  
     max-width: 100%; 
     background-color: rgb(255, 253, 253);   
     flex-direction: column; 
     align-content: center;  
+    padding-top: 50px;
 }  
 
 #h2aboutme{ 
