@@ -221,11 +221,187 @@ h3{
     color: rgba(239, 239, 240,0.8); 
     height: 50px; 
     width: 150px; 
-    margin-top: 40px;
+    margin-top: 40px; 
+    transition: all .2s ease-in-out; 
+    
 }
 
 #resumebutton:hover{ 
     cursor: pointer;  
-    transform: scale(1.1);
+    transform: scaleX(1.1);
+    background-color: rgba(228, 228, 228, 0.4);
+    transition: all .2s ease-in-out; 
+} 
+
+#outsideschool{ 
+    width: 100vw; 
+    max-width: 100%; 
+    background-color: aquamarine; 
+    height: 400px; 
+    margin-top: 100px; 
+    text-align: center; 
+    display: flex;  
+    flex-direction: column; 
+}  
+
+#outsideheader{ 
+    margin-top: 30px;
+}
+
+#outsidegrid{ 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+} 
+
+.outsidegridelm{ 
+    background-color: azure;
+    padding: 10px; 
+    margin-top: 50px;
+} 
+
+.outsideimage{ 
+    height: 100px;
+    width: 100px; 
+    border-radius: 50%; 
+} 
+
+#projectsouter{ 
+    width: 100%; 
+    height: 600px; 
+    display: flex;  
+    flex-direction: column; 
+    text-align: center; 
+    background-color: blueviolet;
+}  
+
+#projectheader{ 
+    margin-top: 40px; 
+    margin-bottom: 40px;
+}  
+
+#projectgrid{ 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none; 
+    width: 100%;
+} 
+
+.projectelm{ 
+    margin: 40px; 
+    height: 200px;
+    background-color: antiquewhite; 
+    padding: 30px;
+} 
+
+#contact{ 
+    width: 100%; 
+    height: 300px; 
+    background-color: chartreuse; 
+    text-align: center;  
+    display: block; 
+    padding-top: 20px;
+    
+}
+
+#contacttext{ 
+    display: block; 
+    margin-top: 2px;
+}
+
+#contact h2{ 
+    font-size: xx-large; 
+    margin-top: 40px;
+} 
+
+#contact h4{ 
+    margin-top: 15px;
+} 
+
+#contactbutton{ 
+    margin-top: 30px; 
+    background-color: transparent;
+    border-width: 2px;
+    border-color: black;
+    height: 50px; 
+    width: 150px; 
+    border-style: solid;
+} 
+
+#contactbutton:hover{ 
+    cursor: pointer; 
+    background-color: cyan;  
+    color: white;
+    transition: all .4s ease-in-out; 
+    border-color: cyan; 
+    border-style: solid;
+    
 
 }
+
+
+#footer{ 
+    width: 100%; 
+    height: 200px; 
+    background-color: beige;    
+    display: flex;  
+    flex-direction: column;
+    
+} 
+
+#footerar{ 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 25px;
+}
+
+
+#uparrow i{ 
+    font-size: 35px;
+    color: black;
+} 
+
+#uparrow:hover i{ 
+    color: aqua;
+    transition: 0.5s; 
+}
+
+.material-icons{  
+    text-align: center; 
+    margin-top: 2px;
+}  
+
+#footerlinks{ 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px;
+}  
+
+#footerlinks a{ 
+    text-decoration: none; 
+    color: black;  
+    padding: 10px;   
+    margin: 10px;
+    border-radius: 50%; 
+    background-color: white;
+}
+
+#footerlinks a i{ 
+    font-size: 25px;
+}
+
+#footerlinks a:hover{ 
+    
+    background-color: blue; 
+    transition: 0.5s;
+}
+
+#footercopyright{  
+    margin-top: 10px;
+    text-align: center; 
+    
+    
+}
+
+
+
