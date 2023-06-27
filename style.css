@@ -61,7 +61,7 @@ h3{
 }  
 
 .menu a:hover{  
-    color: rgb(185, 185, 185);  
+    color: #52D6F4; 
 } 
 
 #photoback {  
@@ -75,7 +75,7 @@ h3{
     background-position-y: top; 
     background-size: cover;
     width: 100vw; 
-    height: 750px;   
+    height: 100vh;   
     max-width: 100%;
     text-align: center;     
     display: flex; 
@@ -114,7 +114,7 @@ h3{
     display: flex;
     width: 100vw;  
     max-width: 100%; 
-    background-color: rgb(255, 253, 253);   
+    background-color: #F6F6F6;   
     flex-direction: column; 
     align-content: center;  
     padding-top: 50px; 
@@ -163,14 +163,29 @@ h3{
     font-size: 18px; 
     line-height: 1.6; 
     font-weight: 350;
-}
+} 
+
+#ccsfuc a{ 
+    font-size: 18px; 
+    font-weight: 350; 
+    line-height: 1.6;  
+    text-decoration: none; 
+    color: #26788f;
+} 
+
+#ccsfuc a:hover{ 
+    text-decoration: underline;
+}  
+
+
+
 
 .texttable{ 
     font-size: 1em;
 }
 
 #skills{ 
-    background-color: rgb(255, 253, 253);   
+    background-color: #F6F6F6;   
     text-align: center; 
     padding-top: 20px;
 } 
@@ -305,15 +320,18 @@ h3{
 
 #projectsouter{ 
     width: 100%; 
-    height: 600px; 
+    padding-top: 50px; 
+    padding-bottom: 100px;
     display: flex;  
     flex-direction: column; 
-    text-align: center; 
-    background-color: blueviolet;
+    text-align: center;   
+    align-items: center; 
+    justify-content: center;
+    background-color: #e6e4e4; 
 }  
 
 #projectheader{ 
-    margin-top: 40px; 
+    
     margin-bottom: 40px;
 }  
 
@@ -321,15 +339,101 @@ h3{
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: none; 
-    width: 100%;
+   max-width: 1600px;
+
 } 
 
-.projectelm{ 
-    margin: 40px; 
-    height: 200px;
-    background-color: antiquewhite; 
-    padding: 30px;
+.projectelm{  
+    height: 550px; 
+    max-width: 350px; 
+    width: 350px;
+    background-color: rgb(243, 242, 242); 
+    margin: 10px; 
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column; 
+    align-items: center;  
+    border-radius: 25px;
+    transition: all 300ms ease-in-out;  
+    box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+    
+}    
+
+.projectelm:hover{ 
+    
+    box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+    
+}
+
+.projectimg{ 
+    margin-top: 20px;  
+    margin-bottom: 20px;
+    height: 150px; 
+    width: 150px; 
+}
+
+.projectTextDiv{ 
+    padding: 15px;
 } 
+
+.projectTextDiv h5{ 
+    margin-bottom: 5px; 
+    font-size: 18px;
+} 
+
+.projectTextDiv h6{ 
+    margin-bottom: 5px; 
+    font-size: 15px;
+}
+
+.projectTextDiv li{ 
+    list-style-type: square;  
+    list-style-position: inside; 
+    font-size: 16px; 
+    line-height: 1.6;
+}  
+
+.techused li{ 
+    list-style-type: none; 
+    float: left; 
+    padding: 10px; 
+    margin-left: 10px;
+}
+
+.techused{ 
+    display: flex;  
+    width: 100%;
+    flex-direction: row; 
+    align-self: start; 
+    justify-content: space-between;  
+} 
+
+.techused a{
+    margin-top: 5px;    
+    margin-right: 12px;
+}
+
+.projectgit{ 
+    color: black; 
+    font-size: 30px;     
+    transition: all 300ms ease-in-out;
+}
+
+.projectgit:hover{ 
+    color: #408697; 
+    
+}
+
+#projectheader h2{ 
+    color: black; 
+    font-size: 2em;   
+    word-spacing: 5px; 
+    text-align: center;   
+    font-style: normal; 
+    font-weight: 300; 
+
+}
 
 #resumeheader{ 
     color: black; 
@@ -347,7 +451,7 @@ h3{
     flex-direction: column; 
     align-items: center; 
     padding: 40px; 
-    background-color: rgb(255, 253, 253); 
+    background-color: #F6F6F6;   
 } 
 
 #resumebutton{ 
@@ -355,23 +459,28 @@ h3{
     width: 120px; 
     height: 40px;  
     border-width: 2px;
-    border-color: black;
+    border-color: black; 
+    background-color: #F6F6F6;
     height: 50px; 
     width: 150px; 
-    border-style: solid;
+    border-style: solid; 
+    transition: 300ms;
 } 
 
 #resumebutton:hover{ 
-    cursor: pointer; 
+    cursor: pointer;  
+    background-color: #408697; 
+    color: white;
+    border-style: solid;
 
 }
 
 #pdfveiw{ 
     border-width: 2px; 
     border-color: rgb(0, 0, 0);
-    width: 80%; 
-    height: 500px; 
-    
+    width: 60%; 
+    max-width: 1500px;
+    height: 700px; 
 }
 
 #contact{ 
@@ -405,15 +514,14 @@ h3{
     border-color: black;
     height: 50px; 
     width: 150px; 
-    border-style: solid;
+    border-style: solid; 
+    transition: 300ms;
 } 
 
 #contactbutton:hover{ 
     cursor: pointer; 
-    background-color: cyan;  
+    background-color: #408697; 
     color: white;
-    transition: all .4s ease-in-out; 
-    border-color: cyan; 
     border-style: solid;
     
 
@@ -423,7 +531,7 @@ h3{
 #footer{ 
     width: 100%; 
     height: 200px; 
-    background-color: rgb(81, 81, 81);    
+    background-color: #363538; 
     display: flex;  
     flex-direction: column;
     
@@ -438,12 +546,12 @@ h3{
 
 #uparrow i{ 
     font-size: 35px;
-    color: black;
+    color: #F6F6F6; 
+    transition: 300ms;
 } 
 
 #uparrow:hover i{ 
-    color: aqua;
-    transition: 0.5s; 
+    color: #52D6F4; 
 }
 
 .material-icons{  
@@ -459,11 +567,12 @@ h3{
 
 #footerlinks a{ 
     text-decoration: none; 
-    color: black;  
+    color: #363538;  
     padding: 10px;   
     margin: 10px;
     border-radius: 50%; 
-    background-color: white;
+    background-color: #F6F6F6; 
+    transition: 300ms;
 }
 
 #footerlinks a i{ 
@@ -471,17 +580,15 @@ h3{
 }
 
 #footerlinks a:hover{ 
-    
-    background-color: blue; 
-    transition: 0.5s;
+    background-color: #52D6F4; 
 }
 
 #footercopyright{  
     margin-top: 10px;
     text-align: center; 
-    
-    
 }
 
-
+#footercopyright p{  
+    color: #a1a1a1;
+}
 
