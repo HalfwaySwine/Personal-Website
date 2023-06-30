@@ -16,19 +16,22 @@
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="manifest" href="favicon/site.webmanifest"> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body onscroll="scrollfunction()"> 
 <header>
   <nav id="navbar">
     <ul>  
       <div class = "menu">
-        <il><a class ="nava" href="#photoback">Home</a></il> 
+        <il><a class ="nava" id="navahome" href="#photoback">Home</a></il> 
         <il><a class ="nava" href="#about_me">About</a></il>  
         <il><a class ="nava" href="#skills">Skills</a></il> 
         <il><a class ="nava" href="#projectsouter">Projects</a></il>  
         <il><a class ="nava" href="#resume">Resume</a></il>  
-        <il><a class ="nava" href="#contact">Contacts</a></il>    
+        <il><a class ="nava" href="#contact">Contacts</a></il>     
+        <il><a href="" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></il>
       </div>
     </ul>
   </nav>  
@@ -57,14 +60,7 @@
     <h2>WHEN IM NOT CODING</h2>
   </div>  
   <div id ="outsidegridwrapper">
-    <div id = "outsidegrid">  
-      <div class = "outsidegridelm">  
-        <div class = "outsideimagecont"><img class = "outsideimage" src="images/skiingphoto.jpg"></div>
-        <h4>SKIING</h4> 
-        <p>Skiing is one of my main hobbies in the winter. I typically try to go one to two times a week. 
-          Ive typically go to Whitetail but was ive been lucky enough to go up to Vermont a few time and even Colorado last year.
-        </p>
-      </div> 
+    <div id = "outsidegrid">   
       <div class = "outsidegridelm"> 
         <div class = "outsideimagecont"><img id ="carimage" class = "outsideimage" src="images/2007wrx.JPG"></div> 
         <h4>CARS</h4> 
@@ -79,6 +75,13 @@
         <h4>Hiking</h4> 
         <p>I include moutain biking in this catagory but being outside on a cool trail either walking or riding has always been fun to me. Me and my family just recently took a vaction to New Hamsphere and Maine to go hiking. 
           We hiked around Acadia National Park and White Moutain Forest national Park. I was also lucky enough to go hiking in Montanta and Wyoming a couple years ago.
+        </p>
+      </div> 
+      <div class = "outsidegridelm">  
+        <div class = "outsideimagecont"><img class = "outsideimage" src="images/skiingphoto.jpg"></div>
+        <h4>SKIING</h4> 
+        <p>Skiing is one of my main hobbies in the winter. I typically try to go one to two times a week. 
+          Ive typically go to Whitetail but was ive been lucky enough to go up to Vermont a few time and even Colorado last year.
         </p>
       </div>
     </div> 
@@ -102,6 +105,9 @@
           <div class = "logodiv"><img class = logo src ="images/windows.png"></div> 
           <div class = "logodiv"><img class = logo src ="images/andriod.png"></div> 
         </div>   
+        <div class ="skillbottomtext">
+          <p>Java, C, Git, Github, Linux, Windows, Android</p> 
+        </div>
       </div>  
       <div class = logoword> 
         <p class="logoptext">Languages and tecnologies I have some experence in or are currently learning:</p>
@@ -113,19 +119,15 @@
           <div class = "logodiv"><img class = logo src ="images/Rust-01.png"></div>  
           <div class = "logodiv"><img class = logo src ="images/JavaScript-01.png"></div> 
           <div class = "logodiv"><img class = logo src ="images/assembly.png"></div>    
-        </div>  
+        </div>   
+        <div class ="skillbottomtext">
+          <p>Ocaml, Ruby, HTML, CSS, Rust, JavaScript, Assembly</p> 
+        </div> 
         
       </div> 
     </div>   
 
-    <div id ="skillbottomwrapper">
-      <div class ="skillbottomtext">
-        <p>Java, C, Git, Github, Linux, Windows, Android</p> 
-      </div>
-      <div class ="skillbottomtext">
-        <p>Ocaml, Ruby, HTML, CSS, Rust, JavaScript, Assembly</p> 
-      </div> 
-    </div> 
+    
   </div>
 </div> 
 
