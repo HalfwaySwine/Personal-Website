@@ -102,7 +102,7 @@ h3{
     max-width: 100%;
     text-align: center;     
     display: flex; 
-    background-attachment: fixed;   
+    
     background-color: #363538;    
     align-items: center; 
     justify-content: space-around;
@@ -861,4 +861,18 @@ h3{
 
 
 
+@media screen and (max-height: 671px) {
+    #topdownarrow{ 
+        display: none;
+        
+    } 
 
+    #photoback{ 
+        justify-content: center;
+    } 
+
+    #nameheads{ 
+        margin: 0px; 
+        margin-bottom: 100px;
+    }
+} 
